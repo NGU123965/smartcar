@@ -14,5 +14,9 @@
         "mpu6050.h": "c",
         "f115.h": "c",
         "led.h": "c"
-    }
+    },
+    "editor.detectIndentation": false,
+    "editor.tabSize": 4,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
 }
