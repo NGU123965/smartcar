@@ -1,0 +1,16 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"3 util.c
+[; ;util.c: 3: int abs(int n) {
+[v _abs `(i ~T0 @X0 1 ef1`i ]
+{
+[e :U _abs ]
+[v _n `i ~T0 @X0 1 r1 ]
+[f ]
+"4
+[; ;util.c: 4:     return n < 0 ? -n : n;
+[e ) ? < _n -> 0 `i : -U _n _n ]
+[e $UE 1  ]
+"5
+[; ;util.c: 5: }
+[e :UE 1 ]
+}

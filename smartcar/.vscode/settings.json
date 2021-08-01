@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "init.h": "c",
+        "pic16f18854.h": "c",
+        "eusart.h": "c",
+        "xc.h": "c"
+    }
+}

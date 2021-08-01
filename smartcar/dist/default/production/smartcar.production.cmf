@@ -1,0 +1,776 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\smartcar.production.o
+cinit CODE 0 18 18 13 2
+text1 CODE 0 149 149 1E 2
+text2 CODE 0 DB DB 45 2
+text3 CODE 0 1EA 1EA 15 2
+text4 CODE 0 23A 23A 6 2
+text5 CODE 0 227 227 7 2
+text6 CODE 0 1D3 1D3 17 2
+text8 CODE 0 240 240 6 2
+text9 CODE 0 2B 2B B0 2
+text10 CODE 0 246 246 3 2
+text11 CODE 0 167 167 1B 2
+text12 CODE 0 182 182 1B 2
+text13 CODE 0 19D 19D 1B 2
+text14 CODE 0 214 214 13 2
+text15 CODE 0 1FF 1FF 15 2
+text16 CODE 0 1B8 1B8 1B 2
+text17 CODE 0 120 120 29 2
+maintext CODE 0 234 234 6 2
+cstackCOMMON COMMON 1 77 77 6 1
+intentry CODE 0 4 4 12 2
+bssBANK0 BANK0 1 20 20 32 1
+clrtext CODE 0 22E 22E 6 2
+bssCOMMON COMMON 1 70 70 7 1
+config CONFIG 4 8007 8007 5 2
+$C:\Users\14361\AppData\Local\Temp\xcAs7oc.o
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 16 16 2 2
+config CONFIG 4 8007 8007 5 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 52-6F 1
+RAM A0-EF 1
+RAM 120-16F 1
+RAM 1A0-1EF 1
+RAM 220-26F 1
+RAM 2A0-2EF 1
+RAM 320-32F 1
+BANK0 52-6F 1
+BANK1 A0-EF 1
+BANK2 120-16F 1
+BANK3 1A0-1EF 1
+BANK4 220-26F 1
+BANK5 2A0-2EF 1
+BANK6 320-32F 1
+CONST 2-3 2
+CONST 249-FFF 2
+ENTRY 2-3 2
+ENTRY 249-FFF 2
+IDLOC 8000-8003 2
+SFR10 500-56F 1
+SFR11 580-5EF 1
+SFR12 600-66F 1
+SFR13 680-6EF 1
+SFR14 700-76F 1
+SFR15 780-7EF 1
+SFR16 800-86F 1
+SFR17 880-8EF 1
+SFR18 900-96F 1
+SFR19 980-9EF 1
+SFR20 A00-A6F 1
+SFR21 A80-AEF 1
+SFR22 B00-B6F 1
+SFR23 B80-BEF 1
+SFR24 C00-C6F 1
+SFR25 C80-CEF 1
+SFR26 D00-D6F 1
+SFR27 D80-DEF 1
+SFR28 E00-E6F 1
+SFR29 E80-EEF 1
+SFR30 F00-F6F 1
+SFR31 F80-FEF 1
+STACK 2032-21EF 1
+CODE 2-3 2
+CODE 249-FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-19F 1
+SFR4 200-21F 1
+SFR5 280-29F 1
+SFR6 300-31F 1
+SFR7 380-3EF 1
+SFR8 400-46F 1
+SFR9 480-4EF 1
+BIGRAM 2000-21EF 1
+COMMON 7D-7D 1
+EEDATA F000-F0FF 2
+STRCODE 2-3 2
+STRCODE 249-FFF 2
+STRING 2-3 2
+STRING 249-FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\smartcar.production.o
+18 cinit CODE >7521:C:\Users\14361\AppData\Local\Temp\xcAs7oc.s
+18 cinit CODE >7524:C:\Users\14361\AppData\Local\Temp\xcAs7oc.s
+18 cinit CODE >7572:C:\Users\14361\AppData\Local\Temp\xcAs7oc.s
+19 cinit CODE >7573:C:\Users\14361\AppData\Local\Temp\xcAs7oc.s
+1A cinit CODE >7574:C:\Users\14361\AppData\Local\Temp\xcAs7oc.s
+1B cinit CODE >7575:C:\Users\14361\AppData\Local\Temp\xcAs7oc.s
+1C cinit CODE >7576:C:\Users\14361\AppData\Local\Temp\xcAs7oc.s
+1D cinit CODE >7577:C:\Users\14361\AppData\Local\Temp\xcAs7oc.s
+1E cinit CODE >7578:C:\Users\14361\AppData\Local\Temp\xcAs7oc.s
+1F cinit CODE >7582:C:\Users\14361\AppData\Local\Temp\xcAs7oc.s
+20 cinit CODE >7583:C:\Users\14361\AppData\Local\Temp\xcAs7oc.s
+21 cinit CODE >7584:C:\Users\14361\AppData\Local\Temp\xcAs7oc.s
+22 cinit CODE >7585:C:\Users\14361\AppData\Local\Temp\xcAs7oc.s
+23 cinit CODE >7586:C:\Users\14361\AppData\Local\Temp\xcAs7oc.s
+24 cinit CODE >7587:C:\Users\14361\AppData\Local\Temp\xcAs7oc.s
+27 cinit CODE >7593:C:\Users\14361\AppData\Local\Temp\xcAs7oc.s
+27 cinit CODE >7595:C:\Users\14361\AppData\Local\Temp\xcAs7oc.s
+28 cinit CODE >7596:C:\Users\14361\AppData\Local\Temp\xcAs7oc.s
+29 cinit CODE >7597:C:\Users\14361\AppData\Local\Temp\xcAs7oc.s
+4 intentry CODE >53:E:\Projects\picProjects\smartcar\main.c
+6 intentry CODE >54:E:\Projects\picProjects\smartcar\main.c
+B intentry CODE >55:E:\Projects\picProjects\smartcar\main.c
+E intentry CODE >56:E:\Projects\picProjects\smartcar\main.c
+11 intentry CODE >57:E:\Projects\picProjects\smartcar\main.c
+14 intentry CODE >59:E:\Projects\picProjects\smartcar\main.c
+120 text17 CODE >54:E:\Projects\picProjects\smartcar\pwm.c
+121 text17 CODE >55:E:\Projects\picProjects\smartcar\pwm.c
+122 text17 CODE >57:E:\Projects\picProjects\smartcar\pwm.c
+125 text17 CODE >58:E:\Projects\picProjects\smartcar\pwm.c
+126 text17 CODE >60:E:\Projects\picProjects\smartcar\pwm.c
+129 text17 CODE >61:E:\Projects\picProjects\smartcar\pwm.c
+12A text17 CODE >63:E:\Projects\picProjects\smartcar\pwm.c
+12D text17 CODE >64:E:\Projects\picProjects\smartcar\pwm.c
+12E text17 CODE >66:E:\Projects\picProjects\smartcar\pwm.c
+131 text17 CODE >67:E:\Projects\picProjects\smartcar\pwm.c
+132 text17 CODE >68:E:\Projects\picProjects\smartcar\pwm.c
+137 text17 CODE >68:E:\Projects\picProjects\smartcar\pwm.c
+13C text17 CODE >68:E:\Projects\picProjects\smartcar\pwm.c
+13F text17 CODE >68:E:\Projects\picProjects\smartcar\pwm.c
+142 text17 CODE >68:E:\Projects\picProjects\smartcar\pwm.c
+145 text17 CODE >68:E:\Projects\picProjects\smartcar\pwm.c
+148 text17 CODE >69:E:\Projects\picProjects\smartcar\pwm.c
+1B8 text16 CODE >20:E:\Projects\picProjects\smartcar\motor.c
+1B8 text16 CODE >21:E:\Projects\picProjects\smartcar\motor.c
+1BD text16 CODE >22:E:\Projects\picProjects\smartcar\motor.c
+1C2 text16 CODE >23:E:\Projects\picProjects\smartcar\motor.c
+1CA text16 CODE >24:E:\Projects\picProjects\smartcar\motor.c
+1D2 text16 CODE >25:E:\Projects\picProjects\smartcar\motor.c
+1FF text15 CODE >6:E:\Projects\picProjects\smartcar\motor.c
+1FF text15 CODE >7:E:\Projects\picProjects\smartcar\motor.c
+204 text15 CODE >8:E:\Projects\picProjects\smartcar\motor.c
+209 text15 CODE >9:E:\Projects\picProjects\smartcar\motor.c
+20E text15 CODE >10:E:\Projects\picProjects\smartcar\motor.c
+213 text15 CODE >11:E:\Projects\picProjects\smartcar\motor.c
+214 text14 CODE >106:E:\Projects\picProjects\smartcar\syn480r.c
+214 text14 CODE >107:E:\Projects\picProjects\smartcar\syn480r.c
+218 text14 CODE >108:E:\Projects\picProjects\smartcar\syn480r.c
+21B text14 CODE >108:E:\Projects\picProjects\smartcar\syn480r.c
+21D text14 CODE >108:E:\Projects\picProjects\smartcar\syn480r.c
+221 text14 CODE >109:E:\Projects\picProjects\smartcar\syn480r.c
+224 text14 CODE >110:E:\Projects\picProjects\smartcar\syn480r.c
+226 text14 CODE >112:E:\Projects\picProjects\smartcar\syn480r.c
+19D text13 CODE >13:E:\Projects\picProjects\smartcar\motor.c
+19D text13 CODE >14:E:\Projects\picProjects\smartcar\motor.c
+1A5 text13 CODE >15:E:\Projects\picProjects\smartcar\motor.c
+1AD text13 CODE >16:E:\Projects\picProjects\smartcar\motor.c
+1B2 text13 CODE >17:E:\Projects\picProjects\smartcar\motor.c
+1B7 text13 CODE >18:E:\Projects\picProjects\smartcar\motor.c
+182 text12 CODE >48:E:\Projects\picProjects\smartcar\motor.c
+182 text12 CODE >49:E:\Projects\picProjects\smartcar\motor.c
+18A text12 CODE >50:E:\Projects\picProjects\smartcar\motor.c
+192 text12 CODE >51:E:\Projects\picProjects\smartcar\motor.c
+197 text12 CODE >52:E:\Projects\picProjects\smartcar\motor.c
+19C text12 CODE >53:E:\Projects\picProjects\smartcar\motor.c
+167 text11 CODE >41:E:\Projects\picProjects\smartcar\motor.c
+167 text11 CODE >42:E:\Projects\picProjects\smartcar\motor.c
+16F text11 CODE >43:E:\Projects\picProjects\smartcar\motor.c
+177 text11 CODE >44:E:\Projects\picProjects\smartcar\motor.c
+17C text11 CODE >45:E:\Projects\picProjects\smartcar\motor.c
+181 text11 CODE >46:E:\Projects\picProjects\smartcar\motor.c
+246 text10 CODE >102:E:\Projects\picProjects\smartcar\syn480r.c
+246 text10 CODE >103:E:\Projects\picProjects\smartcar\syn480r.c
+248 text10 CODE >104:E:\Projects\picProjects\smartcar\syn480r.c
+2B text9 CODE >28:E:\Projects\picProjects\smartcar\syn480r.c
+2B text9 CODE >29:E:\Projects\picProjects\smartcar\syn480r.c
+30 text9 CODE >31:E:\Projects\picProjects\smartcar\syn480r.c
+34 text9 CODE >32:E:\Projects\picProjects\smartcar\syn480r.c
+35 text9 CODE >33:E:\Projects\picProjects\smartcar\syn480r.c
+37 text9 CODE >33:E:\Projects\picProjects\smartcar\syn480r.c
+3B text9 CODE >34:E:\Projects\picProjects\smartcar\syn480r.c
+3D text9 CODE >38:E:\Projects\picProjects\smartcar\syn480r.c
+41 text9 CODE >39:E:\Projects\picProjects\smartcar\syn480r.c
+46 text9 CODE >40:E:\Projects\picProjects\smartcar\syn480r.c
+48 text9 CODE >40:E:\Projects\picProjects\smartcar\syn480r.c
+4C text9 CODE >41:E:\Projects\picProjects\smartcar\syn480r.c
+4E text9 CODE >43:E:\Projects\picProjects\smartcar\syn480r.c
+53 text9 CODE >45:E:\Projects\picProjects\smartcar\syn480r.c
+58 text9 CODE >47:E:\Projects\picProjects\smartcar\syn480r.c
+5A text9 CODE >47:E:\Projects\picProjects\smartcar\syn480r.c
+60 text9 CODE >47:E:\Projects\picProjects\smartcar\syn480r.c
+64 text9 CODE >48:E:\Projects\picProjects\smartcar\syn480r.c
+66 text9 CODE >49:E:\Projects\picProjects\smartcar\syn480r.c
+68 text9 CODE >50:E:\Projects\picProjects\smartcar\syn480r.c
+68 text9 CODE >51:E:\Projects\picProjects\smartcar\syn480r.c
+69 text9 CODE >53:E:\Projects\picProjects\smartcar\syn480r.c
+6B text9 CODE >53:E:\Projects\picProjects\smartcar\syn480r.c
+71 text9 CODE >53:E:\Projects\picProjects\smartcar\syn480r.c
+75 text9 CODE >55:E:\Projects\picProjects\smartcar\syn480r.c
+7F text9 CODE >56:E:\Projects\picProjects\smartcar\syn480r.c
+82 text9 CODE >56:E:\Projects\picProjects\smartcar\syn480r.c
+86 text9 CODE >58:E:\Projects\picProjects\smartcar\syn480r.c
+8C text9 CODE >59:E:\Projects\picProjects\smartcar\syn480r.c
+8E text9 CODE >59:E:\Projects\picProjects\smartcar\syn480r.c
+94 text9 CODE >59:E:\Projects\picProjects\smartcar\syn480r.c
+9E text9 CODE >61:E:\Projects\picProjects\smartcar\syn480r.c
+A3 text9 CODE >62:E:\Projects\picProjects\smartcar\syn480r.c
+A8 text9 CODE >63:E:\Projects\picProjects\smartcar\syn480r.c
+AD text9 CODE >65:E:\Projects\picProjects\smartcar\syn480r.c
+B0 text9 CODE >66:E:\Projects\picProjects\smartcar\syn480r.c
+B3 text9 CODE >67:E:\Projects\picProjects\smartcar\syn480r.c
+B4 text9 CODE >69:E:\Projects\picProjects\smartcar\syn480r.c
+B8 text9 CODE >73:E:\Projects\picProjects\smartcar\syn480r.c
+BD text9 CODE >75:E:\Projects\picProjects\smartcar\syn480r.c
+C1 text9 CODE >79:E:\Projects\picProjects\smartcar\syn480r.c
+C5 text9 CODE >83:E:\Projects\picProjects\smartcar\syn480r.c
+CF text9 CODE >85:E:\Projects\picProjects\smartcar\syn480r.c
+D3 text9 CODE >90:E:\Projects\picProjects\smartcar\syn480r.c
+D4 text9 CODE >91:E:\Projects\picProjects\smartcar\syn480r.c
+D5 text9 CODE >92:E:\Projects\picProjects\smartcar\syn480r.c
+D6 text9 CODE >94:E:\Projects\picProjects\smartcar\syn480r.c
+D6 text9 CODE >95:E:\Projects\picProjects\smartcar\syn480r.c
+D7 text9 CODE >99:E:\Projects\picProjects\smartcar\syn480r.c
+DA text9 CODE >100:E:\Projects\picProjects\smartcar\syn480r.c
+240 text8 CODE >53:E:\Projects\picProjects\smartcar\init.c
+240 text8 CODE >55:E:\Projects\picProjects\smartcar\init.c
+243 text8 CODE >56:E:\Projects\picProjects\smartcar\init.c
+245 text8 CODE >57:E:\Projects\picProjects\smartcar\init.c
+1D3 text6 CODE >6:E:\Projects\picProjects\smartcar\eusart.c
+1D3 text6 CODE >7:E:\Projects\picProjects\smartcar\eusart.c
+1D5 text6 CODE >8:E:\Projects\picProjects\smartcar\eusart.c
+1D6 text6 CODE >11:E:\Projects\picProjects\smartcar\eusart.c
+1D8 text6 CODE >12:E:\Projects\picProjects\smartcar\eusart.c
+1D9 text6 CODE >13:E:\Projects\picProjects\smartcar\eusart.c
+1DC text6 CODE >14:E:\Projects\picProjects\smartcar\eusart.c
+1DF text6 CODE >15:E:\Projects\picProjects\smartcar\eusart.c
+1E1 text6 CODE >16:E:\Projects\picProjects\smartcar\eusart.c
+1E3 text6 CODE >17:E:\Projects\picProjects\smartcar\eusart.c
+1E4 text6 CODE >18:E:\Projects\picProjects\smartcar\eusart.c
+1E5 text6 CODE >19:E:\Projects\picProjects\smartcar\eusart.c
+1E6 text6 CODE >20:E:\Projects\picProjects\smartcar\eusart.c
+1E7 text6 CODE >21:E:\Projects\picProjects\smartcar\eusart.c
+1E9 text6 CODE >22:E:\Projects\picProjects\smartcar\eusart.c
+227 text5 CODE >18:E:\Projects\picProjects\smartcar\syn480r.c
+227 text5 CODE >19:E:\Projects\picProjects\smartcar\syn480r.c
+229 text5 CODE >20:E:\Projects\picProjects\smartcar\syn480r.c
+22B text5 CODE >21:E:\Projects\picProjects\smartcar\syn480r.c
+22D text5 CODE >22:E:\Projects\picProjects\smartcar\syn480r.c
+23A text4 CODE >53:E:\Projects\picProjects\smartcar\init.c
+23A text4 CODE >55:E:\Projects\picProjects\smartcar\init.c
+23D text4 CODE >56:E:\Projects\picProjects\smartcar\init.c
+23F text4 CODE >57:E:\Projects\picProjects\smartcar\init.c
+1EA text3 CODE >34:E:\Projects\picProjects\smartcar\init.c
+1EA text3 CODE >35:E:\Projects\picProjects\smartcar\init.c
+1EC text3 CODE >36:E:\Projects\picProjects\smartcar\init.c
+1EE text3 CODE >37:E:\Projects\picProjects\smartcar\init.c
+1EF text3 CODE >38:E:\Projects\picProjects\smartcar\init.c
+1F0 text3 CODE >39:E:\Projects\picProjects\smartcar\init.c
+1F1 text3 CODE >40:E:\Projects\picProjects\smartcar\init.c
+1F2 text3 CODE >41:E:\Projects\picProjects\smartcar\init.c
+1F3 text3 CODE >42:E:\Projects\picProjects\smartcar\init.c
+1F4 text3 CODE >43:E:\Projects\picProjects\smartcar\init.c
+1F5 text3 CODE >44:E:\Projects\picProjects\smartcar\init.c
+1F6 text3 CODE >45:E:\Projects\picProjects\smartcar\init.c
+1F7 text3 CODE >46:E:\Projects\picProjects\smartcar\init.c
+1F8 text3 CODE >47:E:\Projects\picProjects\smartcar\init.c
+1F9 text3 CODE >48:E:\Projects\picProjects\smartcar\init.c
+1FA text3 CODE >49:E:\Projects\picProjects\smartcar\init.c
+1FB text3 CODE >50:E:\Projects\picProjects\smartcar\init.c
+1FE text3 CODE >51:E:\Projects\picProjects\smartcar\init.c
+DB text2 CODE >6:E:\Projects\picProjects\smartcar\pwm.c
+DB text2 CODE >8:E:\Projects\picProjects\smartcar\pwm.c
+DD text2 CODE >9:E:\Projects\picProjects\smartcar\pwm.c
+DE text2 CODE >10:E:\Projects\picProjects\smartcar\pwm.c
+DF text2 CODE >11:E:\Projects\picProjects\smartcar\pwm.c
+E0 text2 CODE >13:E:\Projects\picProjects\smartcar\pwm.c
+E2 text2 CODE >15:E:\Projects\picProjects\smartcar\pwm.c
+E5 text2 CODE >17:E:\Projects\picProjects\smartcar\pwm.c
+E8 text2 CODE >18:E:\Projects\picProjects\smartcar\pwm.c
+EA text2 CODE >19:E:\Projects\picProjects\smartcar\pwm.c
+EC text2 CODE >20:E:\Projects\picProjects\smartcar\pwm.c
+EE text2 CODE >21:E:\Projects\picProjects\smartcar\pwm.c
+F0 text2 CODE >22:E:\Projects\picProjects\smartcar\pwm.c
+F2 text2 CODE >23:E:\Projects\picProjects\smartcar\pwm.c
+F4 text2 CODE >24:E:\Projects\picProjects\smartcar\pwm.c
+F6 text2 CODE >26:E:\Projects\picProjects\smartcar\pwm.c
+F8 text2 CODE >27:E:\Projects\picProjects\smartcar\pwm.c
+F9 text2 CODE >28:E:\Projects\picProjects\smartcar\pwm.c
+FC text2 CODE >29:E:\Projects\picProjects\smartcar\pwm.c
+FD text2 CODE >30:E:\Projects\picProjects\smartcar\pwm.c
+FE text2 CODE >31:E:\Projects\picProjects\smartcar\pwm.c
+FF text2 CODE >32:E:\Projects\picProjects\smartcar\pwm.c
+100 text2 CODE >36:E:\Projects\picProjects\smartcar\pwm.c
+105 text2 CODE >37:E:\Projects\picProjects\smartcar\pwm.c
+107 text2 CODE >38:E:\Projects\picProjects\smartcar\pwm.c
+108 text2 CODE >39:E:\Projects\picProjects\smartcar\pwm.c
+109 text2 CODE >40:E:\Projects\picProjects\smartcar\pwm.c
+10A text2 CODE >41:E:\Projects\picProjects\smartcar\pwm.c
+10D text2 CODE >42:E:\Projects\picProjects\smartcar\pwm.c
+10F text2 CODE >43:E:\Projects\picProjects\smartcar\pwm.c
+111 text2 CODE >44:E:\Projects\picProjects\smartcar\pwm.c
+113 text2 CODE >46:E:\Projects\picProjects\smartcar\pwm.c
+116 text2 CODE >47:E:\Projects\picProjects\smartcar\pwm.c
+118 text2 CODE >48:E:\Projects\picProjects\smartcar\pwm.c
+11A text2 CODE >49:E:\Projects\picProjects\smartcar\pwm.c
+11C text2 CODE >50:E:\Projects\picProjects\smartcar\pwm.c
+11E text2 CODE >51:E:\Projects\picProjects\smartcar\pwm.c
+11F text2 CODE >52:E:\Projects\picProjects\smartcar\pwm.c
+149 text1 CODE >9:E:\Projects\picProjects\smartcar\init.c
+149 text1 CODE >10:E:\Projects\picProjects\smartcar\init.c
+14B text1 CODE >11:E:\Projects\picProjects\smartcar\init.c
+14C text1 CODE >12:E:\Projects\picProjects\smartcar\init.c
+14D text1 CODE >14:E:\Projects\picProjects\smartcar\init.c
+14E text1 CODE >15:E:\Projects\picProjects\smartcar\init.c
+14F text1 CODE >16:E:\Projects\picProjects\smartcar\init.c
+150 text1 CODE >18:E:\Projects\picProjects\smartcar\init.c
+152 text1 CODE >19:E:\Projects\picProjects\smartcar\init.c
+153 text1 CODE >20:E:\Projects\picProjects\smartcar\init.c
+154 text1 CODE >22:E:\Projects\picProjects\smartcar\init.c
+156 text1 CODE >23:E:\Projects\picProjects\smartcar\init.c
+157 text1 CODE >24:E:\Projects\picProjects\smartcar\init.c
+158 text1 CODE >26:E:\Projects\picProjects\smartcar\init.c
+159 text1 CODE >27:E:\Projects\picProjects\smartcar\init.c
+15A text1 CODE >28:E:\Projects\picProjects\smartcar\init.c
+15D text1 CODE >29:E:\Projects\picProjects\smartcar\init.c
+160 text1 CODE >30:E:\Projects\picProjects\smartcar\init.c
+163 text1 CODE >31:E:\Projects\picProjects\smartcar\init.c
+166 text1 CODE >32:E:\Projects\picProjects\smartcar\init.c
+234 maintext CODE >46:E:\Projects\picProjects\smartcar\main.c
+234 maintext CODE >47:E:\Projects\picProjects\smartcar\main.c
+237 maintext CODE >48:E:\Projects\picProjects\smartcar\main.c
+22E clrtext CODE >7561:C:\Users\14361\AppData\Local\Temp\xcAs7oc.s
+22E clrtext CODE >7562:C:\Users\14361\AppData\Local\Temp\xcAs7oc.s
+22F clrtext CODE >7563:C:\Users\14361\AppData\Local\Temp\xcAs7oc.s
+22F clrtext CODE >7564:C:\Users\14361\AppData\Local\Temp\xcAs7oc.s
+230 clrtext CODE >7565:C:\Users\14361\AppData\Local\Temp\xcAs7oc.s
+231 clrtext CODE >7566:C:\Users\14361\AppData\Local\Temp\xcAs7oc.s
+232 clrtext CODE >7567:C:\Users\14361\AppData\Local\Temp\xcAs7oc.s
+233 clrtext CODE >7568:C:\Users\14361\AppData\Local\Temp\xcAs7oc.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 1 0 ABS 0 - dist/default/production\smartcar.production.o
+__size_of_irs_routine 0 0 ABS 0 - dist/default/production\smartcar.production.o
+__Hspace_0 249 0 ABS 0 - -
+__Hspace_1 7D 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 10013 0 ABS 0 - -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__end_of_forward_left 33A 0 CODE 0 text12 dist/default/production\smartcar.production.o
+__Hstrings 0 0 ABS 0 strings -
+_HH_w 75 0 COMMON 1 bssCOMMON dist/default/production\smartcar.production.o
+_LATA 16 0 ABS 0 - dist/default/production\smartcar.production.o
+_LATB 17 0 ABS 0 - dist/default/production\smartcar.production.o
+_LATC 18 0 ABS 0 - dist/default/production\smartcar.production.o
+_LL_w 76 0 COMMON 1 bssCOMMON dist/default/production\smartcar.production.o
+_PEIE 5E 0 ABS 0 - dist/default/production\smartcar.production.o
+_T2PR 28D 0 ABS 0 - dist/default/production\smartcar.production.o
+_TRMT 8F1 0 ABS 0 - dist/default/production\smartcar.production.o
+___sp 0 0 STACK 2 stack C:\Users\14361\AppData\Local\Temp\xcAs7oc.o
+_back 370 0 CODE 0 text16 dist/default/production\smartcar.production.o
+_fail 428 0 CODE 0 text14 dist/default/production\smartcar.production.o
+_main 468 0 CODE 0 maintext dist/default/production\smartcar.production.o
+_stop 3FE 0 CODE 0 text15 dist/default/production\smartcar.production.o
+btemp 7E 0 ABS 0 - dist/default/production\smartcar.production.o
+start 2C 0 CODE 0 init C:\Users\14361\AppData\Local\Temp\xcAs7oc.o
+__size_of_back 0 0 ABS 0 - dist/default/production\smartcar.production.o
+__size_of_fail 0 0 ABS 0 - dist/default/production\smartcar.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\smartcar.production.o
+__size_of_stop 0 0 ABS 0 - dist/default/production\smartcar.production.o
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+_init_syn480r 44E 0 CODE 0 text5 dist/default/production\smartcar.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+intlevel0 0 0 ENTRY 0 functab C:\Users\14361\AppData\Local\Temp\xcAs7oc.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\14361\AppData\Local\Temp\xcAs7oc.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\14361\AppData\Local\Temp\xcAs7oc.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\14361\AppData\Local\Temp\xcAs7oc.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\14361\AppData\Local\Temp\xcAs7oc.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\14361\AppData\Local\Temp\xcAs7oc.o
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+__size_of_set_pwm 0 0 ABS 0 - dist/default/production\smartcar.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\smartcar.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+_RC1STAbits 11D 0 ABS 0 - dist/default/production\smartcar.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+i1_reset_tmr0 480 0 CODE 0 text8 dist/default/production\smartcar.production.o
+__size_of_init_syn480r 0 0 ABS 0 - dist/default/production\smartcar.production.o
+_ANSELA F38 0 ABS 0 - dist/default/production\smartcar.production.o
+_ANSELB F43 0 ABS 0 - dist/default/production\smartcar.production.o
+_ANSELC F4E 0 ABS 0 - dist/default/production\smartcar.production.o
+__size_of_reset_tmr0 0 0 ABS 0 - dist/default/production\smartcar.production.o
+_CCPR1H 30D 0 ABS 0 - dist/default/production\smartcar.production.o
+_CCPR1L 30C 0 ABS 0 - dist/default/production\smartcar.production.o
+_CCPR2H 311 0 ABS 0 - dist/default/production\smartcar.production.o
+_CCPR2L 310 0 ABS 0 - dist/default/production\smartcar.production.o
+_CCPR3H 315 0 ABS 0 - dist/default/production\smartcar.production.o
+_CCPR3L 314 0 ABS 0 - dist/default/production\smartcar.production.o
+_CCPR4H 319 0 ABS 0 - dist/default/production\smartcar.production.o
+_CCPR5L 31C 0 ABS 0 - dist/default/production\smartcar.production.o
+__size_of_pwm_init 0 0 ABS 0 - dist/default/production\smartcar.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+__end_of_init_syn480r 45C 0 CODE 0 text5 dist/default/production\smartcar.production.o
+__size_of_handle_wireless_control 0 0 ABS 0 - dist/default/production\smartcar.production.o
+___stackhi 21EF 0 ABS 0 - C:\Users\14361\AppData\Local\Temp\xcAs7oc.o
+___stacklo 2032 0 ABS 0 - C:\Users\14361\AppData\Local\Temp\xcAs7oc.o
+__size_ofi1_reset_tmr0 0 0 ABS 0 - dist/default/production\smartcar.production.o
+__size_of_success 0 0 ABS 0 - dist/default/production\smartcar.production.o
+start_initialization 30 0 CODE 0 cinit dist/default/production\smartcar.production.o
+__size_of_forward 0 0 ABS 0 - dist/default/production\smartcar.production.o
+__end_of_set_pwm 292 0 CODE 0 text17 dist/default/production\smartcar.production.o
+_irs_routine 8 0 CODE 0 intentry dist/default/production\smartcar.production.o
+_pwm_init 1B6 0 CODE 0 text2 dist/default/production\smartcar.production.o
+__end_ofi1_reset_tmr0 48C 0 CODE 0 text8 dist/default/production\smartcar.production.o
+_RB5PPS F1D 0 ABS 0 - dist/default/production\smartcar.production.o
+_RC0PPS F20 0 ABS 0 - dist/default/production\smartcar.production.o
+_RC1PPS F21 0 ABS 0 - dist/default/production\smartcar.production.o
+_RC2PPS F22 0 ABS 0 - dist/default/production\smartcar.production.o
+_RC3PPS F23 0 ABS 0 - dist/default/production\smartcar.production.o
+clear_ram0 45C 0 CODE 0 clrtext dist/default/production\smartcar.production.o
+__pcstackBANK0 0 0 BANK0 1 cstackBANK0 dist/default/production\smartcar.production.o
+_T2CLKCON 290 0 ABS 0 - dist/default/production\smartcar.production.o
+__end_of_pwm_init 240 0 CODE 0 text2 dist/default/production\smartcar.production.o
+_TMR0IE 38B5 0 ABS 0 - dist/default/production\smartcar.production.o
+_TMR0IF 3865 0 ABS 0 - dist/default/production\smartcar.production.o
+_TMR2IE 38D1 0 ABS 0 - dist/default/production\smartcar.production.o
+_TMR2IF 3881 0 ABS 0 - dist/default/production\smartcar.production.o
+_TRISA0 88 0 ABS 0 - dist/default/production\smartcar.production.o
+_TRISA7 8F 0 ABS 0 - dist/default/production\smartcar.production.o
+_TRISB4 94 0 ABS 0 - dist/default/production\smartcar.production.o
+_TRISB5 95 0 ABS 0 - dist/default/production\smartcar.production.o
+_TRISC0 98 0 ABS 0 - dist/default/production\smartcar.production.o
+_TRISC1 99 0 ABS 0 - dist/default/production\smartcar.production.o
+_TRISC2 9A 0 ABS 0 - dist/default/production\smartcar.production.o
+_TRISC3 9B 0 ABS 0 - dist/default/production\smartcar.production.o
+__end_of_init_EUSART 3D4 0 CODE 0 text6 dist/default/production\smartcar.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\14361\AppData\Local\Temp\xcAs7oc.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hbank4 0 0 ABS 0 bank4 -
+__Hbank5 0 0 ABS 0 bank5 -
+__Hbank6 0 0 ABS 0 bank6 -
+__Hbank7 0 0 BANK7 1 bank7 -
+__Hbank8 0 0 BANK8 1 bank8 -
+__Hbank9 0 0 BANK9 1 bank9 -
+__Hcinit 56 0 CODE 0 cinit -
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hstack 0 0 STACK 2 stack -
+__Hbank10 0 0 BANK10 1 bank10 -
+__Hbank11 0 0 BANK11 1 bank11 -
+__Hbank12 0 0 BANK12 1 bank12 -
+__Hbank13 0 0 BANK13 1 bank13 -
+__Hbank14 0 0 BANK14 1 bank14 -
+__Hbank15 0 0 BANK15 1 bank15 -
+__Hbank16 0 0 BANK16 1 bank16 -
+__Hbank17 0 0 BANK17 1 bank17 -
+__Hbank18 0 0 BANK18 1 bank18 -
+__Hbank19 0 0 BANK19 1 bank19 -
+__Hbank20 0 0 BANK20 1 bank20 -
+__Hbank21 0 0 BANK21 1 bank21 -
+__Hbank22 0 0 BANK22 1 bank22 -
+__Hbank23 0 0 BANK23 1 bank23 -
+__Hbank24 0 0 BANK24 1 bank24 -
+__Hbank25 0 0 BANK25 1 bank25 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Hbank28 0 0 BANK28 1 bank28 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank31 0 0 BANK31 1 bank31 -
+__Hbigram 0 0 ABS 0 bigram -
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 10018 0 CONFIG 4 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lbank4 0 0 ABS 0 bank4 -
+__Lbank5 0 0 ABS 0 bank5 -
+__Lbank6 0 0 ABS 0 bank6 -
+__Lbank7 0 0 BANK7 1 bank7 -
+__Lbank8 0 0 BANK8 1 bank8 -
+__Lbank9 0 0 BANK9 1 bank9 -
+__Lcinit 30 0 CODE 0 cinit -
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lstack 0 0 STACK 2 stack -
+_forward_right 2CE 0 CODE 0 text11 dist/default/production\smartcar.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 2C 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__end_of_success 492 0 CODE 0 text10 dist/default/production\smartcar.production.o
+__Linit 2C 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__Ltext 0 0 ABS 0 text -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+int$flags 7E 0 ABS 0 - dist/default/production\smartcar.production.o
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_GIE 5F 0 ABS 0 - dist/default/production\smartcar.production.o
+_RA0 60 0 ABS 0 - dist/default/production\smartcar.production.o
+_RA1 61 0 ABS 0 - dist/default/production\smartcar.production.o
+_RA7 67 0 ABS 0 - dist/default/production\smartcar.production.o
+__S0 249 0 ABS 0 - -
+__S1 7D 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+set_pwm@power 77 0 COMMON 1 cstackCOMMON dist/default/production\smartcar.production.o
+__end_of_forward 370 0 CODE 0 text13 dist/default/production\smartcar.production.o
+_data_recv 48 0 BANK0 1 bssBANK0 dist/default/production\smartcar.production.o
+__Lintentry 8 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\14361\AppData\Local\Temp\xcAs7oc.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+_init_hardware 292 0 CODE 0 text1 dist/default/production\smartcar.production.o
+_PIE3bits 719 0 ABS 0 - dist/default/production\smartcar.production.o
+__end_of_init_tmr0 3FE 0 CODE 0 text3 dist/default/production\smartcar.production.o
+__ptext10 48C 0 CODE 0 text10 dist/default/production\smartcar.production.o
+__ptext11 2CE 0 CODE 0 text11 dist/default/production\smartcar.production.o
+__ptext12 304 0 CODE 0 text12 dist/default/production\smartcar.production.o
+__ptext13 33A 0 CODE 0 text13 dist/default/production\smartcar.production.o
+__ptext14 428 0 CODE 0 text14 dist/default/production\smartcar.production.o
+__ptext15 3FE 0 CODE 0 text15 dist/default/production\smartcar.production.o
+__ptext16 370 0 CODE 0 text16 dist/default/production\smartcar.production.o
+__ptext17 240 0 CODE 0 text17 dist/default/production\smartcar.production.o
+__size_of_init_tmr0 0 0 ABS 0 - dist/default/production\smartcar.production.o
+_bit_cnt 73 0 COMMON 1 bssCOMMON dist/default/production\smartcar.production.o
+__Lbank10 0 0 BANK10 1 bank10 -
+__Lbank11 0 0 BANK11 1 bank11 -
+__Lbank12 0 0 BANK12 1 bank12 -
+__Lbank13 0 0 BANK13 1 bank13 -
+__Lbank14 0 0 BANK14 1 bank14 -
+__Lbank15 0 0 BANK15 1 bank15 -
+__Lbank16 0 0 BANK16 1 bank16 -
+__Lbank17 0 0 BANK17 1 bank17 -
+__Lbank18 0 0 BANK18 1 bank18 -
+__Lbank19 0 0 BANK19 1 bank19 -
+__Lbank20 0 0 BANK20 1 bank20 -
+__Lbank21 0 0 BANK21 1 bank21 -
+__Lbank22 0 0 BANK22 1 bank22 -
+__Lbank23 0 0 BANK23 1 bank23 -
+__Lbank24 0 0 BANK24 1 bank24 -
+__Lbank25 0 0 BANK25 1 bank25 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__pmaintext 468 0 CODE 0 maintext dist/default/production\smartcar.production.o
+__Lbigram 0 0 ABS 0 bigram -
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+_init_tmr0 3D4 0 CODE 0 text3 dist/default/production\smartcar.production.o
+__size_of_forward_right 0 0 ABS 0 - dist/default/production\smartcar.production.o
+__size_of_init_EUSART 0 0 ABS 0 - dist/default/production\smartcar.production.o
+set_pwm@num 7A 0 COMMON 1 cstackCOMMON dist/default/production\smartcar.production.o
+_set_pwm 240 0 CODE 0 text17 dist/default/production\smartcar.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__pbssCOMMON 70 0 COMMON 1 bssCOMMON dist/default/production\smartcar.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__Lend_init 2C 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 4E 0 CODE 0 cinit dist/default/production\smartcar.production.o
+__end_of_irs_routine 2C 0 CODE 0 intentry dist/default/production\smartcar.production.o
+__Hintentry 2C 0 CODE 0 intentry -
+_TX1STAbits 11E 0 ABS 0 - dist/default/production\smartcar.production.o
+__end_of_forward_right 304 0 CODE 0 text11 dist/default/production\smartcar.production.o
+__Lstrings 0 0 ABS 0 strings -
+_reset_tmr0 474 0 CODE 0 text4 dist/default/production\smartcar.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec -
+_BAUD1CONbits 11F 0 ABS 0 - dist/default/production\smartcar.production.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__ptext1 292 0 CODE 0 text1 dist/default/production\smartcar.production.o
+__ptext2 1B6 0 CODE 0 text2 dist/default/production\smartcar.production.o
+__ptext3 3D4 0 CODE 0 text3 dist/default/production\smartcar.production.o
+__ptext4 474 0 CODE 0 text4 dist/default/production\smartcar.production.o
+__ptext5 44E 0 CODE 0 text5 dist/default/production\smartcar.production.o
+__ptext6 3A6 0 CODE 0 text6 dist/default/production\smartcar.production.o
+__ptext8 480 0 CODE 0 text8 dist/default/production\smartcar.production.o
+__ptext9 56 0 CODE 0 text9 dist/default/production\smartcar.production.o
+_handle_wireless_control 56 0 CODE 0 text9 dist/default/production\smartcar.production.o
+__end_of_handle_wireless_control 1B6 0 CODE 0 text9 dist/default/production\smartcar.production.o
+__size_of_init_hardware 0 0 ABS 0 - dist/default/production\smartcar.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+_success 48C 0 CODE 0 text10 dist/default/production\smartcar.production.o
+__end_of__initialization 4E 0 CODE 0 cinit dist/default/production\smartcar.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__Lclrtext 0 0 ABS 0 clrtext -
+_forward 33A 0 CODE 0 text13 dist/default/production\smartcar.production.o
+__end_of_init_hardware 2CE 0 CODE 0 text1 dist/default/production\smartcar.production.o
+__pcstackCOMMON 77 0 COMMON 1 cstackCOMMON dist/default/production\smartcar.production.o
+__end_of_reset_tmr0 480 0 CODE 0 text4 dist/default/production\smartcar.production.o
+_null_cnt 70 0 COMMON 1 bssCOMMON dist/default/production\smartcar.production.o
+_T0CON0bits 1E 0 ABS 0 - dist/default/production\smartcar.production.o
+_T0CON1bits 1F 0 ABS 0 - dist/default/production\smartcar.production.o
+_forward_left 304 0 CODE 0 text12 dist/default/production\smartcar.production.o
+__Hend_init 30 0 CODE 0 end_init -
+__end_of_back 3A6 0 CODE 0 text16 dist/default/production\smartcar.production.o
+__end_of_fail 44E 0 CODE 0 text14 dist/default/production\smartcar.production.o
+__end_of_main 474 0 CODE 0 maintext dist/default/production\smartcar.production.o
+__end_of_stop 428 0 CODE 0 text15 dist/default/production\smartcar.production.o
+_ANSA0 79C0 0 ABS 0 - dist/default/production\smartcar.production.o
+_PORTA C 0 ABS 0 - dist/default/production\smartcar.production.o
+_PORTB D 0 ABS 0 - dist/default/production\smartcar.production.o
+_PORTC E 0 ABS 0 - dist/default/production\smartcar.production.o
+_RFBIT 74 0 COMMON 1 bssCOMMON dist/default/production\smartcar.production.o
+_RXPPS ECB 0 ABS 0 - dist/default/production\smartcar.production.o
+_SPBRG 11B 0 ABS 0 - dist/default/production\smartcar.production.o
+_TMR0H 1D 0 ABS 0 - dist/default/production\smartcar.production.o
+_TRISA 11 0 ABS 0 - dist/default/production\smartcar.production.o
+_TRISB 12 0 ABS 0 - dist/default/production\smartcar.production.o
+_TRISC 13 0 ABS 0 - dist/default/production\smartcar.production.o
+_TXREG 11A 0 ABS 0 - dist/default/production\smartcar.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_start 72 0 COMMON 1 bssCOMMON dist/default/production\smartcar.production.o
+_CCP1CON 30E 0 ABS 0 - dist/default/production\smartcar.production.o
+_CCP2CON 312 0 ABS 0 - dist/default/production\smartcar.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production\smartcar.production.o
+_CCP3CON 316 0 ABS 0 - dist/default/production\smartcar.production.o
+_CCP4CON 31A 0 ABS 0 - dist/default/production\smartcar.production.o
+__initialization 30 0 CODE 0 cinit dist/default/production\smartcar.production.o
+__pbssBANK0 20 0 BANK0 1 bssBANK0 dist/default/production\smartcar.production.o
+_T2CONbits 28E 0 ABS 0 - dist/default/production\smartcar.production.o
+_ANSELBbits F43 0 ABS 0 - dist/default/production\smartcar.production.o
+__size_of_forward_left 0 0 ABS 0 - dist/default/production\smartcar.production.o
+_init_EUSART 3A6 0 CODE 0 text6 dist/default/production\smartcar.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+intentry 0 4 8 245 2
+reset_vec 0 0 0 2 2
+bssBANK0 1 20 20 32 1
+bssCOMMON 1 70 70 D 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

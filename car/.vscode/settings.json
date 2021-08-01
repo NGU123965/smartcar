@@ -1,0 +1,18 @@
+{
+    "files.associations": {
+        "pic16f18854.h": "c",
+        "xc.h": "c",
+        "car_mpu6050.h": "c",
+        "pic.h": "c",
+        "math.h": "c",
+        "car_i2c.h": "c",
+        "eusart.h": "c",
+        "init.h": "c",
+        "i2c.h": "c",
+        "stdio.h": "c",
+        "stdlib.h": "c",
+        "mpu6050.h": "c",
+        "f115.h": "c",
+        "led.h": "c"
+    }
+}
